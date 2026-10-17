@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.sysmon"
+          path="/org/gnome/shell/extensions/sysmon/">
+
+    <key name="refresh-interval" type="i">
+      <default>2</default>
+      <range min="1" max="10"/>
+      <summary>Refresh interval in seconds</summary>
+    </key>
+
+    <key name="monochrome-mode" type="b">
+      <default>false</default>
+      <summary>Use one neutral color instead of status colors</summary>
+    </key>
+
+    <key name="panel-font-size" type="i">
+      <default>12</default>
+      <range min="8" max="20"/>
+      <summary>Panel text font size in pixels</summary>
+    </key>
+
+    <!-- Which items appear in the top panel bar -->
+    <key name="bar-cpu" type="b">
+      <default>true</default>
+      <summary>Show CPU usage in panel</summary>
+    </key>
+    <key name="bar-gpu" type="b">
+      <default>true</default>
+      <summary>Show GPU usage in panel</summary>
+    </key>
+    <key name="bar-ram" type="b">
+      <default>true</default>
+      <summary>Show RAM usage in panel</summary>
+    </key>
+    <key name="bar-swap" type="b">
+      <default>false</default>
+      <summary>Show swap usage in panel</summary>
+    </key>
+    <key name="bar-temp" type="b">
+      <default>true</default>
+      <summary>Show CPU and GPU average temperature in panel</summary>
+    </key>
+    <key name="bar-net" type="b">
+      <default>true</default>
+      <summary>Show network speed in panel</summary>
+    </key>
+    <key name="bar-ssd-speed" type="b">
+      <default>false</default>
+      <summary>Show SSD read/write speed in panel</summary>
+    </key>
+
+    <!-- Network display style -->
+    <key name="net-merged" type="b">
+      <default>false</default>
+      <summary>Merge upload and download into a single total speed</summary>
+    </key>
+
+  </schema>
+</schemalist>
